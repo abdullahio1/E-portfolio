@@ -329,6 +329,7 @@ footer{
     transform: translatex(60px);
     opacity: 1;
 }
+/* small phones, tablets, large smartphones*/
 @media(max-width: 768px){
 nav{
     height: 68px;
@@ -342,4 +343,25 @@ h1{
 .language{
     width: calc(100%/3);
 }
+.Project__description--para{
+    font-size: 14px;
+}
+.project-description{
+    left: 30px;
+    padding-right: 30px;
+}
+}
+/* small phones */
+@media(max-width: 480px){
+    .nav__link:not(:last-child){
+        display:none;
+    }
+    .Project__description--para{
+        display: none;
+    }
+    .project__description--link{
+        display: flex;
+        justify-content: center;
+    }
+    
 }
